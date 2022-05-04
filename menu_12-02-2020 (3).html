@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        
+        *{ margin:0px;
+            padding: 0px;
+        }
+        
+
+        div{
+            background-color:transparent;
+            width: 80%;
+            margin: 30px auto;
+            transform:skew(-45deg, 0deg);         
+          
+            
+        }
+        ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+           
+        }
+
+        li{
+            background-color: navy;
+            padding: 10px;
+            box-shadow: 5px 5px 0px 5px rgb(158, 154, 154);
+            flex:1 1 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-right: 2px solid white;
+            transition: 0.5s;
+        }
+
+        a{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: white;
+            text-decoration: none;
+            transform:skew(45deg, 0deg);  
+             
+        }
+
+        li:hover{
+            background-color: darkred;
+            transform:translate(5px,1px);
+           
+        }
+
+        
+            
+        @media all  and (max-width: 600px){
+            ul{
+                flex-direction: column;
+            }
+
+            li{
+                padding:10px;
+            }
+
+            div{
+                transform: skew(0deg,0deg);
+            }
+
+            a{
+                transform: skew(0deg,0deg);
+            }
+
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Categoría1</a></li>
+            <li><a href="#">Categoría2</a></li>
+            <li><a href="#">Categoría3</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</body>
+</html>
